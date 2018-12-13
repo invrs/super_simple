@@ -81,4 +81,4 @@ WORKDIR /opt/app
 
 COPY --from=builder /opt/built .
 
-CMD trap 'exit' INT; ./bin/super_simple foreground
+CMD trap 'exit' INT; SPECIAL_VARIABLE=cats ./bin/super_simple foreground

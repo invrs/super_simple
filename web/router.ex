@@ -17,6 +17,8 @@ defmodule SuperSimple.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    get "/up", PageController, :up
   end
 
   # Other scopes may use custom stacks.
